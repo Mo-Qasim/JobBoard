@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Light Industrial",
+        "numOfJobs": 55
+    },
+    {
+        "name": "Resturant",
+        "numOfJobs": 53
+    },
+    {
+        "name": "I.T",
+        "numOfJobs": 42
+    },
+    {
+        "name": "Manufacturing",
+        "numOfJobs": 71
+    },
+    {
+        "name": "Engineering",
+        "numOfJobs": 39
+    },
+    {
+        "name": "Programming",
+        "numOfJobs": 64
+    },
+    {
+        "name": "Trade Persons",
+        "numOfJobs": 24
+    },
+    {
+        "name": "Writter",
+        "numOfJobs": 19
+    },
+    {
+        "name": "Hospitality",
+        "numOfJobs": 69
+    },
+    {
+        "name": "Assembly",
+        "numOfJobs": 55
+    },
+    {
+        "name": "Clerical",
+        "numOfJobs": 37
+    }
+]
