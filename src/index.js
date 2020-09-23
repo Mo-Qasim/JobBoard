@@ -16,7 +16,7 @@ function Root() {
       <Router>
         <ScrollTop />
         <Switch>
-          <Route path="/advance" component={AdvanceSearchWrapper} />
+          <Route path="/search" component={AdvanceSearchWrapper} />
           <Route path="/detail" component={JobDetailWrapper} />
           <Route path="/" component={JobBoardWrapper} />
         </Switch>

@@ -14,24 +14,28 @@ const JobView = (props) => {
                     return (
                         <Link to="/detail">
                             <Card className={classes.root}>
-
-                                <Typography variant="h5"> {job.position} </Typography>
-                                <div className="jb_flexWrapper">
-                                    <div>
-                                        <span className="jd_location">{job.location}</span>
-                                        <span className="jd_type">{job.type}</span>
-                                    </div>
-                                    <div style={{ display: 'flex', flexWrap: 'wrap', }}>
-                                        <Typography className={classes.jobDate} variant="subtitle2">
-                                            {job.date}
-                                        </Typography>
+                                <div className="cardHeader">
+                                    <Typography className={classes.headingTitle} variant="h5"> {job.position} </Typography>
+                                    <div className="jb_flexWrapper">
+                                        <div>
+                                            <span className="jd_location">{job.location}</span>
+                                            <span className="jd_type">{job.type}</span>
+                                        </div>
+                                        <div className="hideOn959">
+                                            <Typography className={classes.jobDate} variant="subtitle2">
+                                                {job.date}
+                                            </Typography>
+                                        </div>
                                     </div>
                                 </div>
-
                                 <Typography className={classes.jobdisc} variant="body2" paragraph>
                                     {job.job_disc}
                                 </Typography>
-
+                                <div className="hideAbove959">
+                                    <Typography className={classes.jobDate} variant="subtitle2">
+                                        {job.date}
+                                    </Typography>
+                                </div>
                             </ Card>
                         </Link>
                     )

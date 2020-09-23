@@ -9,9 +9,13 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import logo from '../images/MarathonLogo.png';
+import search from '../images/icons/search_now.png';
+import save from '../images/icons/save.png';
+import apply from '../images/icons/apply_now.png';
+import back from '../images/icons/back.png';
+import account from '../images/icons/account.png';
 
-import addIcon from '../images/icons/save(w).svg';
+import logo from '../images/MarathonLogo.png';
 
 import { Link as L } from 'react-router-dom'
 
@@ -30,26 +34,26 @@ export default function PrimarySearchAppBar() {
                         </L>
                         <div className="desktopMenu">
                             <Typography className={classes.title} variant="h6">
-                                <ReplyIcon className={classes.icon} />
+                                <img src={back} className={classes.icon} />
                                 <Link className={classes.link} href="#">
                                     Back to marathonstaffing.com
                              </Link>
                             </Typography>
                             <Typography className={classes.title} variant="h6">
-                                <TelegramIcon className={classes.icon} />
+                                <img src={apply} className={classes.icon} />
                                 <Link className={classes.link} href="#">
                                     Apply Now
                              </Link>
                             </Typography>
-                            <L to="/advance">
+                            <L to="/search">
                                 <Typography className={classes.title} variant="h6">
-                                    <FilterListIcon className={classes.icon} />
+                                    <img src={search} className={classes.icon} />
                                     <Link className={classes.link} href="#">
                                         Advanced Search
                              </Link>
                                 </Typography></L>
                             <Typography className={classes.title} variant="h6">
-                                <SaveIcon className={classes.icon} />
+                                <img src={save} className={classes.icon} />
                                 <Link className={classes.link} href="#">
                                     Saved Jobs & Searches
                              </Link>
@@ -60,7 +64,7 @@ export default function PrimarySearchAppBar() {
 
                         </div>
                         <Typography className={`${classes.title} desktopMenu`} variant="h6">
-                            <AccountCircleIcon className={classes.icon} />
+                            <img src={account} className={classes.icon} />
                             <Link className={classes.link} href="#">
                                 Account Log in
                              </Link>
@@ -84,35 +88,37 @@ export default function PrimarySearchAppBar() {
 
             <div
                 className={toggle ? `toggleOn` : 'toggleOff'}>
-                <Typography className={classes.title} variant="h6">
-                    <ReplyIcon className={classes.icon} />
+                <Typography className={classes.title2} variant="h6">
+                    <img src={back} className={classes.icon} />
                     <Link className={classes.link} href="#">
                         Back to marathonstaffing.com
                              </Link>
                 </Typography>
-                <Typography className={classes.title} variant="h6">
-                    <TelegramIcon className={classes.icon} />
+                <Typography className={classes.title2} variant="h6">
+                    <img src={apply} className={classes.icon} />
                     <Link className={classes.link} href="#">
                         Apply Now
                              </Link>
                 </Typography>
 
-                <L to="/advance">
-                    <Typography className={classes.title} variant="h6">
-                        <FilterListIcon className={classes.icon} />
+                <L to="/search">
+                    <Typography className={classes.title2} variant="h6">
+                        <img src={search} className={classes.icon} />
                         <Link className={classes.link} href="#">
                             Advanced Search
                              </Link>
                     </Typography>
                 </L>
-                <Typography className={classes.title} variant="h6">
-                    <SaveIcon className={classes.icon} />
+                <Typography className={classes.title2} variant="h6">
+                    <img src={save} className={classes.icon} />
+
                     <Link className={classes.link} href="#">
                         Saved Jobs & Searches
                              </Link>
                 </Typography>
-                <Typography className={classes.title} variant="h6">
-                    <AccountCircleIcon className={classes.icon} />
+                <Typography className={classes.title2} variant="h6">
+                    <img src={account} className={classes.icon} />
+
                     <Link className={classes.link} href="#">
                         Account Log in
                              </Link>

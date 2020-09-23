@@ -2,18 +2,20 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { jobBaordStyle } from '../jss/styles'
 import { Container, Grid } from '@material-ui/core'
+import Media from 'react-media'
 
 import Navbar from '../components/Navbar'
-import LeftSection from '../components/jobDetail/LeftSection'
-import RightSection from '../components/jobDetail/RightSection'
-import JobView from '../components/JobView'
+
+import JobInfo from '../components/jobDetail/JobInfo'
+import ApplyBtn from '../components/jobDetail/ApplyBtn'
+import Tab from '../components/jobDetail/Tab'
+
+import JobDescription from '../components/jobDetail/JobDescription'
+import SaveShare from '../components/jobDetail/SaveShare'
+
 import Footer from '../components/Footer'
 
-import job_catogaries from '../API_data/job_cat.json'
-import job_detail from '../API_data/job_detail.json'
-
 const useStyles = makeStyles(jobBaordStyle);
-
 
 const JobDetailWrapper = () => {
     const classes = useStyles();
@@ -23,16 +25,40 @@ const JobDetailWrapper = () => {
 
             <div style={{ paddingBottom: '120px' }}>
                 <Container>
-                    <Grid container spacing={3}>
-                        <Grid item xs={12} md={4}>
-                            <LeftSection />
-                        </Grid>
+                    <Media query="(max-width: 959px)" render={() =>
+                        (
+                            <Grid container spacing={3}>
+                                <Grid item xs={12} md={4}>
+                                    <JobInfo job="Event Greeters" />
+                                    <ApplyBtn />
+                                </Grid>
 
-                        <Grid item xs={12} md={8}>
-                            <RightSection />
+                                <Grid item xs={12} md={8}>
 
-                        </Grid>
-                    </Grid>
+                                    <JobDescription jobTitle="" />
+                                    <SaveShare />
+                                    <Tab />
+
+                                </Grid>
+                            </Grid>
+                        )} />
+                    <Media query="(min-width: 960px)" render={() =>
+                        (
+                            <Grid container spacing={3}>
+                                <Grid item xs={12} md={4}>
+                                    <JobInfo />
+                                    <ApplyBtn />
+                                    <Tab />
+                                </Grid>
+
+                                <Grid item xs={12} md={8}>
+
+                                    <SaveShare />
+                                    <JobDescription jobTitle="Event Greeters" />
+
+                                </Grid>
+                            </Grid>
+                        )} />
 
                 </Container>
             </div>

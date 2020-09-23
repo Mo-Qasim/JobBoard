@@ -40,12 +40,15 @@ const JobView = (props) => {
                         <Link to="/detail">
                             <Grid className={classes.root} container spacing={1}>
                                 <Grid item md={6}>
-                                    <Typography variant="h5"> {job.position} </Typography>
-                                    <div style={{ margin: '16px 0' }}>
-                                        <span className="jd_location">{job.location}</span>
-                                        <span className="jd_type">{job.type}</span>
-                                    </div>
 
+                                    <div className="cardHeader">
+                                        <Typography className={classes.headingTitle} variant="h5"> {job.position} </Typography>
+                                        <div style={{ margin: '16px 0' }}>
+                                            <span className="jd_location">{job.location}</span>
+                                            <span className="jd_type">{job.type}</span>
+                                        </div>
+
+                                    </div>
                                     <Typography className={classes.jobdisc} variant="body2" paragraph>
                                         {job.job_disc}
                                     </Typography>
@@ -61,10 +64,12 @@ const JobView = (props) => {
                                         {job.office}
                                     </Typography>
                                 </Grid>
-                                <Grid item md={2}>
-                                    <Typography className={classes.jobDate} variant="subtitle2">
-                                        {job.date}
-                                    </Typography>
+                                <Grid item md={2} className={classes.setWidth}>
+                                    <div className="flexOn959">
+                                        <Typography className={classes.jobDate} variant="subtitle2">
+                                            {job.date}
+                                        </Typography>
+                                    </div>
                                 </Grid>
                             </Grid>
                         </Link>

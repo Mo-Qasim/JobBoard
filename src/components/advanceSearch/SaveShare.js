@@ -1,22 +1,20 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import SaveIcon from '@material-ui/icons/Save';
-import ScreenShareIcon from '@material-ui/icons/ScreenShare';
-import { Button, Typography } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 import { saveShareStyle } from '../../jss/styles'
+
+import save from '../../images/icons/save _black.png'
+import share from '../../images/icons/share.png'
 
 const useStyles = makeStyles(saveShareStyle);
 
 const SaveShare = (props) => {
     const classes = useStyles();
 
-    return (
+    return (//<SaveIcon className={`${classes.icon} ${classes.darkIcon}`} />
         <>
-            <Typography className={classes.title} variant="h6" > All Jobs  <div className={classes.jobsCount}> {115} </div> </Typography>
-            <Typography className={classes.title} variant="h6"> Matched Criteria <div className={classes.jobsCount}> {115} </div> </Typography>
-
-            <Button className={classes.btn}> <SaveIcon className={`${classes.icon} ${classes.darkIcon}`} /> Save This Job </Button>
-            <Button className={`${classes.btn} ${classes.btnBottom}`}> <ScreenShareIcon className={classes.icon} />  Share This Job </Button>
+            <Button className={classes.btn}> <img className={classes.icon} src={save} />  Save This Job </Button>
+            <Button className={`${classes.btn} ${classes.btnBottom}`}> <img className={classes.icon} src={share} />  Share This Job </Button>
 
         </>
 

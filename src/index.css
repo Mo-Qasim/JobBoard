@@ -6,6 +6,14 @@ html,body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', sans-serif;
 }
 
+button{
+  border-radius: 5px !important;
+}
+
+.MuiPaginationItem-root {
+  border-radius: 50px !important;
+}
+
      #btn{
         background-color: #0093d0;
         border-radius: 0;
@@ -41,6 +49,15 @@ a, a:active, a:focus{
   text-decoration: none;
 }
 
+
+.hideAbove959{
+  display: none;
+}
+
+.hideOn959{
+  display: flex;
+}
+
 .desktopMenu{
     display: flex;
 }
@@ -56,14 +73,14 @@ a, a:active, a:focus{
   top: 90px;
   right: 0;
   left: 0;
-  padding: 36px 24px;
-  background-color: #3097d1;
+  padding: 20px 36px 40px 26px;
+  background-color: rgba(0, 147, 208, 1);
   
   transition: 0.7s top ease-in;
 }
 
 .MuiPaginationItem-textPrimary.Mui-selected{
-  background-color: #0093d0 !important;
+  background-color: #29679f !important;
 }
 
 .resp_height{
@@ -79,19 +96,15 @@ a, a:active, a:focus{
 
 /* header */
 #headerSection{
-  padding: 140px 0;
+  padding-bottom: 86px;
   color: white;
-  background-image: url('./images/MP-Desktop-Image.png');
+  background-image: url('./images/MP-Desktop-Image.jpg');
   background-size: cover;
 }
 
 @media(max-width: 767px){
-  .paginationWrapper{
-    flex-direction: column;
-    justify-content: center;
-  }
   #headerSection{
-    background-image: url('./images/MP-Mobile-Image.png');
+    background-image: url('./images/MP-Mobile-Image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -124,16 +137,21 @@ a, a:active, a:focus{
     border-radius: 20px;
     margin-right: 14px;
     padding: 5px 22px;
-    width: 140px;
     font-size: 13px;
     font-weight: 700;
 }
 
+
+@media(max-width: 400px){
+.jd_type, .jd_location{
+  padding: 4px 7px;
+  margin-right: 8px;
+}
+}
 .jd_location{
     background-color: #fdc236;
     color: #2d2d2d;
     margin-left: 0 !important;
-    width: 150px;
 }
 
 /* view all jobs button wrapper */
@@ -145,21 +163,49 @@ a, a:active, a:focus{
 }
 
 @media (max-width: 959px) {
+        .padding_backBtn{      
+        padding: 26px 18px !important;
+}
+  .flexOn959{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
   .resp_height{
   height: unset;
   padding-bottom: 0;
 }
 
+.hideOn959{
+  display: none;
+}
+
 .paginationWrapper{
   padding-bottom: 50px !important;
+}
+.hideAbove959{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
   .hideOn992{
     display: none;
   }
+
+  .cardHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 .viewJobsWrapper{
   justify-content: center;
   flex-direction: column;
+}
+.flexCenter{
+  flex-direction: row !important;
 }
 }
 
@@ -194,6 +240,10 @@ footer {
 }
 
 @media(max-width: 600px){
+  .paginationWrapper{
+    flex-direction: column;
+    justify-content: center;
+  }
   .toggleOn{
     top: 80px;
   }

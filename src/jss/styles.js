@@ -1,6 +1,6 @@
 export const navBarStyle = {
     root: {
-        backgroundColor: '#0093d0',
+        backgroundColor: 'rgba(0, 147, 208, 0.8)',
         padding: '13px 0',
     },
     logo: {
@@ -10,12 +10,19 @@ export const navBarStyle = {
         flexGrow: 1,
     },
     menuButton: {
-        marginRight: '16px',
+        marginRight: '12px',
+        padding: '4px 10px',
+        border: '3px solid #f5b622',
     },
     title: {
         display: 'flex',
         alignItems: 'center',
         padding: '0 14px',
+    },
+    title2: {
+        display: 'flex',
+        alignItems: 'center',
+        padding: '11px 2px',
     },
     link: {
         transition: '0.2s ease-in',
@@ -29,7 +36,7 @@ export const navBarStyle = {
         },
     },
     icon: {
-        width: '17px',
+        width: '14px',
         color: '#fff',
         marginRight: '6px',
     }
@@ -41,6 +48,7 @@ export const headerStyle = {
         backgroundColor: '#0093d0',
         color: '#fff',
         width: '100%',
+        fontWeight: '700',
         height: '50px',
 
         '&:hover': {
@@ -85,11 +93,20 @@ export const headerStyle = {
         paddingLeft: '22px',
         borderStyle: 'none',
         marginBottom: '14px',
+
+        '@media(max-width: 959px)': {
+            marginBottom: '0',
+        }
     },
     heading: {
         fontSize: '50px',
         fontWeight: '700',
         marginBottom: '18px',
+        marginTop: '86px',
+
+        '@media(max-width: 600px)': {
+            fontSize: '34px',
+        }
     },
     link: {
         color: '#fff',
@@ -104,10 +121,11 @@ export const headerStyle = {
 export const jobCatStyle = {
     root: {
         backgroundColor: '#efefef',
-        padding: '18px 20px',
+        padding: '12px 20px',
         display: 'flex',
-        marginBottom: '8px',
+        marginBottom: '12px',
         transition: '0.2s ease -in',
+        boxShadow: 'none',
         justifyContent: 'space-between',
         alignItems: 'center',
         color: '#29679f',
@@ -133,11 +151,19 @@ export const jobCatStyle = {
         alignItems: 'center',
     },
     typo: {
-        fontWeight: '300',
+        fontWeight: 'normal',
+
+        '@media(max-width: 600px)': {
+            fontSize: '1rem',
+        },
     },
     postion: {
         color: '#444',
-        fontWeight: '300',
+        fontWeight: '500',
+
+        '@media(max-width: 600px)': {
+            fontSize: '1rem',
+        },
     }
 }
 
@@ -165,6 +191,10 @@ export const ApplyNowStyle = {
     heading: {
         fontSize: '34px',
         fontWeight: '700',
+
+        '@media(max-width: 600px)': {
+            fontSize: '26px',
+        }
     },
     subHeading: {
         margin: '6px 0 18px 0',
@@ -185,6 +215,16 @@ export const CardStyle = {
             cursor: 'pointer',
             boxShadow: '0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)',
         },
+    },
+    headingTitle: {
+        fontSize: '1.5rem',
+
+        '@media(max-width: 400px)': {
+            fontSize: '1.2rem',
+        }
+    },
+    setWidth: {
+        width: '100%',
     },
     jobdisc: {
         fontSize: '16px',
@@ -226,6 +266,12 @@ export const jobDetailStyle = {
         '&:hover': {
             cursor: 'pointer',
             boxShadow: '0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)',
+        },
+    },
+    headingTitle: {
+
+        '@media(max-width: 400px)': {
+            fontSize: '1.2rem',
         },
     },
     jobdisc: {
@@ -309,11 +355,21 @@ export const leftSectionStyle = {
         backgroundColor: 'transparent',
         border: '2px solid #000',
         color: '#000',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
 
         '&:hover': {
-            backgroundColor: '#0093d0',
+            textDecoration: 'none',
+            backgroundColor: '#e2e2e2',
+            borderColor: '#e2e2e2',
+            color: '#333',
+        },
+
+        '@media(max-width: 959px)': {
             border: 'none',
-            color: '#fff',
+            justifyContent: 'flex-start',
+
         }
     },
     icon: {
@@ -536,6 +592,10 @@ export const jobBaordStyle = {
     },
     pagination: {
         color: 'red'
+    },
+
+    noMargin: {
+        marginBottom: '0',
     },
 
     btn: {

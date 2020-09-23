@@ -11,6 +11,8 @@ import JobCatogary from '../components/JobCatogary'
 import JobView from '../components/JobView'
 import Footer from '../components/Footer'
 
+import { Link } from 'react-router-dom'
+
 import job_catogaries from '../API_data/job_cat.json'
 import job_detail from '../API_data/job_detail.json'
 
@@ -21,7 +23,6 @@ const JobBoardWrapper = () => {
     const classes = useStyles();
     return (
         <>
-            <Navbar />
             <Header>
                 <HeaderContentJB />
             </ Header>
@@ -40,8 +41,10 @@ const JobBoardWrapper = () => {
                     </Grid>
                 </Grid>
 
-                <div className="viewJobsWrapper">
-                    <Button className={classes.btn}> View All Jobs</Button>
+                <div className="viewJobsWrapper flexCenter">
+                    <Link to="/search">
+                        <Button className={classes.btn}> View All Jobs</Button>
+                    </Link>
                 </div>
             </Container>
 

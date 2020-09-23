@@ -7,18 +7,14 @@ import { rightSectionStyle } from '../../jss/styles'
 
 const useStyles = makeStyles(rightSectionStyle);
 
-export default function RightSection() {
+export default function JobDescription(props) {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
-            <div className="viewJobsWrapper">
-                <Button className={`${classes.btn} ${classes.fullOn959}`}> <SaveIcon className={classes.icon} /> Save this Job</Button>
-                <Button className={`${classes.btn} ${classes.rightBtn}  ${classes.fullOn959}`}> <ScreenShareIcon className={classes.icon} /> Share this Job</Button>
-            </div>
 
             <section className={classes.EventGreet}>
-                <Typography variant="h5">Event Greeters</Typography> <br />
+                <Typography variant="h5">{props.jobTitle}</Typography> <br />
                 <Typography className={classes.text} variant="subtitle1">
                     Marathon Staffing, a premiere Special Event Staffing company, is currently hiring Event and Convention Staff to work at an exciting international electronics event that is upcoming in Las Vegas, NV from Jan 2nd through the 10th, 2020.
                 </Typography>

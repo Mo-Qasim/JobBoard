@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { headerStyle } from '../jss/styles'
+import Navbar from './Navbar'
 import { Typography, Container } from '@material-ui/core'
 
 const useStyles = makeStyles(headerStyle);
@@ -11,8 +12,9 @@ const Header = (props) => {
     return (
         <>
             <main id="headerSection">
+                <Navbar />
                 <Container align="center">
-                    <Typography className={classes.heading} variant="h5" > Take Your Next Step </Typography>
+                    <Typography className={classes.heading} variant="h5" > Take your next step </Typography>
 
                     {props.children}
 
