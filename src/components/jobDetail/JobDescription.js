@@ -14,7 +14,12 @@ export default function JobDescription(props) {
         <div className={classes.root}>
 
             <section className={classes.EventGreet}>
-                <Typography variant="h5">{props.jobTitle}</Typography> <br />
+
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '18px' }}>
+                    <Typography variant="h5">{props.jobTitle}</Typography> <br />
+                    <span className="jd_location location_respsOn">Scaramento CA</span>
+                </div>
+
                 <Typography className={classes.text} variant="subtitle1">
                     Marathon Staffing, a premiere Special Event Staffing company, is currently hiring Event and Convention Staff to work at an exciting international electronics event that is upcoming in Las Vegas, NV from Jan 2nd through the 10th, 2020.
                 </Typography>

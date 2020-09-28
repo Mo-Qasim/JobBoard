@@ -49,6 +49,9 @@ a, a:active, a:focus{
   text-decoration: none;
 }
 
+.location_respsOn{
+  display: inline-block;
+}
 
 .hideAbove959{
   display: none;
@@ -110,7 +113,9 @@ a, a:active, a:focus{
     background-position: center;
   }
 }
-
+  .location_respsOff{
+    display: none;
+  }
 
 /* job Description */
 .jb_flexWrapper{
@@ -134,6 +139,7 @@ a, a:active, a:focus{
     background-color: #30a74d;
     color: white;
     border: 0;
+    margin-top: 8px;
     border-radius: 20px;
     margin-right: 14px;
     padding: 5px 22px;
@@ -163,6 +169,12 @@ a, a:active, a:focus{
 }
 
 @media (max-width: 959px) {
+  .location_respsOn{
+    display: none;
+  }
+    .location_respsOff{
+    display: inline-block;
+  }
         .padding_backBtn{      
         padding: 26px 18px !important;
 }

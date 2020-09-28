@@ -23,7 +23,11 @@ export default function JobInfo(props) {
 
             <section className={classes.officeWrapper}>
 
-                <Typography variant="h5">{props.job}</Typography>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', marginBottom: '18px' }}>
+                    <Typography variant="h5">{props.job}</Typography>
+                    <span className="jd_location location_respsOff">Scaramento CA</span>
+                </div>
+
                 <Typography className={classes.subTitle} variant="h6">Office</Typography>
                 <Typography className={classes.text} variant="subtitle1">
                     NVLasV

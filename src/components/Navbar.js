@@ -116,7 +116,7 @@ export default function PrimarySearchAppBar() {
                         Saved Jobs & Searches
                              </Link>
                 </Typography>
-                <Typography className={classes.title2} variant="h6">
+                <Typography className={`${classes.title2} ${classes.noBorder}`} variant="h6">
                     <img src={account} className={classes.icon} />
 
                     <Link className={classes.link} href="#">

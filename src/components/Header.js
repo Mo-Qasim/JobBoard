@@ -14,7 +14,7 @@ const Header = (props) => {
             <main id="headerSection">
                 <Navbar />
                 <Container align="center">
-                    <Typography className={classes.heading} variant="h5" > Take your next step </Typography>
+                    <Typography className={classes.heading} variant="h5" > Take your next step. </Typography>
 
                     {props.children}
 

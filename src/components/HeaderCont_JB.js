@@ -14,7 +14,7 @@ const HeaderContentJB = (props) => {
             <Grid container spacing={2}>
                 <Grid item xs={false} md={2}></Grid>
                 <Grid item xs={12} md={3}>
-                    <input className={classes.textArea} placeholder="Job title and keywords" />
+                    <input className={classes.textArea} placeholder="Job Title & Keywords" />
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <input className={classes.textArea} placeholder="Location" />

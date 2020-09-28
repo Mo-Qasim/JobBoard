@@ -12,8 +12,8 @@ const Header = () => {
         <section className={classes.root}>
             <Container>
 
-                <Typography className={classes.heading} variant="h5" > Take Your Next Step </Typography>
-                <Typography className={classes.subHeading} variant="body2" paragraph> Create an account and let your next job find you. </Typography>
+                <Typography className={classes.heading} variant="h5" >  Create an account and let your next job find you. </Typography>
+                <br />
                 <Button className={classes.btn}> Apply Now </Button>
 
             </Container>

@@ -23,6 +23,10 @@ export const navBarStyle = {
         display: 'flex',
         alignItems: 'center',
         padding: '11px 2px',
+        borderBottom: '1px solid #e2e2e2',
+    },
+    noBorder: {
+        border: 'none',
     },
     link: {
         transition: '0.2s ease-in',
@@ -189,11 +193,13 @@ export const ApplyNowStyle = {
         }
     },
     heading: {
-        fontSize: '34px',
+        fontSize: '32px',
         fontWeight: '700',
+        padding: '0 30%',
 
         '@media(max-width: 600px)': {
-            fontSize: '26px',
+            padding: '0 6%',
+            fontSize: '20px',
         }
     },
     subHeading: {
@@ -287,36 +293,7 @@ export const jobDetailStyle = {
 }
 
 export const saveShareStyle = {
-    btn: {
-        borderRadius: '5px',
-        backgroundColor: '#fdc236',
-        borderRadius: 0,
-        marginTop: '18px',
-        color: '#333',
-        width: '100%',
-        height: '56px',
-        fontWeight: '700',
-        textTransform: 'none',
 
-        '&:hover': {
-            backgroundColor: '#ffb300',
-        }
-    },
-    btnBottom: {
-        backgroundColor: '#0093d0',
-        color: '#fff',
-
-        '&:hover': {
-            backgroundColor: '#0286bc',
-        }
-    },
-    icon: {
-        position: 'absolute',
-        left: '30px',
-    },
-    darkIcon: {
-        color: '#333'
-    },
     title: {
         marginBottom: '12px',
         color: '#666',
@@ -597,7 +574,39 @@ export const jobBaordStyle = {
     noMargin: {
         marginBottom: '0',
     },
+    btn2: {
+        borderRadius: '5px',
+        backgroundColor: '#fdc236',
+        borderRadius: 0,
+        marginTop: '18px',
+        color: '#333',
+        width: '100%',
+        height: '56px',
+        fontWeight: '700',
+        textTransform: 'none',
 
+        '&:hover': {
+            backgroundColor: '#ffb300',
+        },
+    },
+    fullWidth: {
+        width: '100%',
+    },
+    btnBottom: {
+        backgroundColor: '#0093d0',
+        color: '#fff',
+
+        '&:hover': {
+            backgroundColor: '#0286bc',
+        }
+    },
+    icon: {
+        position: 'absolute',
+        left: '30px',
+    },
+    darkIcon: {
+        color: '#333'
+    },
     btn: {
         borderRadius: '5px',
         backgroundColor: '#0093d0',
